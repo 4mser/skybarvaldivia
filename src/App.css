@@ -16,7 +16,6 @@
   height: 100vh;
   background: black;
   position: fixed;
-  filter: blur(40px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -24,7 +23,7 @@
 }
 
 .bg video{
-  filter: hue-rotate(160deg) contrast(.95);
+  filter: hue-rotate(160deg) contrast(.95) blur(40px);
   object-fit: cover;
 }
 
