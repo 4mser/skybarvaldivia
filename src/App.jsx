@@ -10,9 +10,10 @@ function App() {
 
   return (
     <div className="App">
-      <Bg></Bg>
       <Header></Header>
       <Title></Title>
+      <Bg></Bg>
+
       {/* <Banner></Banner> */}
       {/* <ImageHome></ImageHome> */}
     </div>

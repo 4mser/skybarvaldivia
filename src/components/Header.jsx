@@ -5,6 +5,7 @@ import { CgMenuLeft} from 'react-icons/cg'
 import { GrClose } from 'react-icons/gr'
 import {ImSpoonKnife} from 'react-icons/im'
 import { FaHome, FaCocktail, FaRegClock, FaRegChartBar, FaConciergeBell, FaComments, FaBookmark, FaMapMarkedAlt, FaUserFriends } from 'react-icons/fa'
+import Bg from './Bg';
 
 
 
@@ -54,12 +55,13 @@ const Header = () => {
     return (
         <header className='header'>
 
+
             <CgMenuLeft className='menu' onClick={toggleMenu} style={{filter: isMenuOpen ? 'blur(10px)' : 'blur(0)'}}></CgMenuLeft>
           
             <aside>
 
                 <div className={`bg-aside ${isMenuOpen ? 'open' : 'closed'}`} onClick={isMenuOpen ? toggleMenu : () => {}}>
-                    <div className='fig fig1' style={{
+                    {/* <div className='fig fig1' style={{
                     transform: `translate(${-limitedX}%, ${-limitedY}%)`,
                     transition: "transform 0.1s ease-out",
                     }}></div>
@@ -82,7 +84,7 @@ const Header = () => {
                     <div className='fig fig6'style={{
                     transform: `translate(${-limitedX}%, ${-limitedY}%)`,
                     transition: "transform 0.1s ease-out",
-                    }}></div>
+                    }}></div> */}
                 </div>
                 
 
@@ -184,6 +186,9 @@ const Header = () => {
                 <div><MdNightlight className='wea' onMouseEnter={() => setShowWidget(true)} onMouseLeave={() => setShowWidget(false)} style={{filter: isMenuOpen ? 'blur(10px)' : 'blur(0)'}}></MdNightlight></div>
 
             </section>
+
+            
+
         </header>
     )
 };
