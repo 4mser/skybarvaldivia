@@ -348,9 +348,15 @@
   left: 0;
   overflow: hidden;
   z-index: -1;
-  backdrop-filter: blur(10px);
   opacity: 1;
 
+}
+
+@media (max-width: 700px) {
+  .bg-aside.open {
+    backdrop-filter: blur(10px);
+
+  }
 }
 
 
