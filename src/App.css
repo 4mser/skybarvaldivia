@@ -502,10 +502,14 @@
   height: 25rem;
 }
 
+
+
 .aside-icons:hover .nav-container {
   width: 15rem;
   height: 15rem;
 }
+
+
 
 .aside-icons .nav-container .nav {
   width: 10rem;
@@ -561,6 +565,8 @@
   transform: rotate(0) scale(3) translateX(1rem);
   
 }
+
+
 
 
 .aside-icons.open .nav-container .nav {
@@ -943,4 +949,28 @@
     cursor: none;
   }
   
+}
+
+/* Impedir hover navegador en versión movil */
+
+@media (max-width: 700px) {
+  .aside-icons.closed:hover {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .aside-icons.closed:hover .nav-container {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .aside-icons.closed:hover .nav-container .nav .imenu {
+    opacity: 1;
+    transform: none;
+    filter: invert(0);
+  }
+
+  .aside-icons.closed:hover .pages-inicio .dash-routes {
+    transform: translateX(1rem) scale(1.8);
+  }
 }
