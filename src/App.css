@@ -265,7 +265,15 @@
 }
 
 .mensaje-bienvenida {
-  font-size: 4rem;
+  font-size: 9vw;
+}
+
+@media (max-width: 700px) {
+  .title {
+    left: 45%;
+    top: 30%;
+    transform: translate(-45%, -30%);
+  }
 }
 
 .title .barra {
@@ -493,11 +501,11 @@
 }
 
 .aside-icons .nav-container .nav {
-  width: 25rem;
-  height: 25rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   border: 0px solid white;
-  transition: .3s ease;
+  transition: .5s ease;
   position:absolute;
   display: flex;
   justify-content: space-between;
@@ -572,6 +580,7 @@
   justify-content: center;
   transition: .5s ease;
 }
+
 
 
 
@@ -898,4 +907,33 @@
   top: 0;
   left: 0;
   z-index: 9999;
+}
+
+/* Ocultar cursores en versión movil */
+
+@media (max-width: 700px) {
+  .dash-routes {
+    cursor: none;
+  }
+
+  .logo  img:hover {
+    cursor: none;
+  }
+
+  .menu:hover {
+    cursor: none;
+  }
+
+  .banner .info:hover img {
+    cursor: none; 
+  }
+
+  .aside-icons:hover .pages-inicio .dash-routes:hover {
+    cursor: none;
+  }
+
+  .wea {
+    cursor: none;
+  }
+  
 }
