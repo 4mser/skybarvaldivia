@@ -42,7 +42,7 @@
 
 .header {
   top: 0;
-  width: 100%;
+  width:100%;
   height: 7rem;
   padding: 2rem 7rem ;
   display: flex;
@@ -349,13 +349,17 @@
   overflow: hidden;
   z-index: -1;
   opacity: 1;
-
 }
 
 @media (max-width: 700px) {
   .bg-aside.open {
     backdrop-filter: blur(10px);
+    transition: .1s;
+  }
 
+  .wea {
+    cursor: none;
+    pointer-events: none;
   }
 }
 

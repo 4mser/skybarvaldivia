@@ -58,7 +58,7 @@ const Header = () => {
           
             <aside>
 
-                <div className={`bg-aside ${isMenuOpen ? 'open' : 'closed'}`}>
+                <div className={`bg-aside ${isMenuOpen ? 'open' : 'closed'}`} onClick={isMenuOpen ? toggleMenu : () => {}}>
                     <div className='fig fig1' style={{
                     transform: `translate(${-limitedX}%, ${-limitedY}%)`,
                     transition: "transform 0.1s ease-out",
