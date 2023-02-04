@@ -54,7 +54,7 @@ const Header = () => {
     return (
         <header className='header'>
 
-            <CgMenuLeft className='menu' onClick={toggleMenu}></CgMenuLeft>
+            <CgMenuLeft className='menu' onClick={toggleMenu} style={{filter: isMenuOpen ? 'blur(10px)' : 'blur(0)'}}></CgMenuLeft>
           
             <aside>
 
@@ -172,7 +172,7 @@ const Header = () => {
             </aside>
 
             <div className='logo'>
-                <img src="https://i.postimg.cc/PqykkNnG/white-blue-logo-Mesa-de-trabajo-1-08.png" alt="" />
+                <img src="https://i.postimg.cc/PqykkNnG/white-blue-logo-Mesa-de-trabajo-1-08.png" alt="" style={{filter: isMenuOpen ? 'blur(10px)' : 'blur(0)'}}/>
             </div>
             
             <section className='weather'>
@@ -181,7 +181,7 @@ const Header = () => {
                     <img src="https://developer.android.com/static/design/media/widgets_info.png?hl=es-419" alt="" />
                 </div>
 
-                <div><MdNightlight className='wea' onMouseEnter={() => setShowWidget(true)} onMouseLeave={() => setShowWidget(false)}></MdNightlight></div>
+                <div><MdNightlight className='wea' onMouseEnter={() => setShowWidget(true)} onMouseLeave={() => setShowWidget(false)} style={{filter: isMenuOpen ? 'blur(10px)' : 'blur(0)'}}></MdNightlight></div>
 
             </section>
         </header>

@@ -60,6 +60,7 @@
     height: 10rem;
   } to {
     height: 7rem;
+    
   }
 }
 
@@ -267,17 +268,7 @@
   font-size: 6rem;
 }
 
-@media (max-width: 700px) {
-  .title {
-    left: 20%;
-    top: 30%;
-    transform: translate(-20%, -30%);
-  }
 
-  .title h1 {
-    font-size: 3rem;
-  }
-}
 
 .title .barra {
   height: 0.2rem;
@@ -295,7 +286,25 @@
   }
 }
 
+@media (max-width: 700px) {
+  .title {
+    left: 20%;
+    top: 30%;
+    transform: translate(-20%, -30%);
+  }
 
+  .mensaje-bienvenida {
+    font-size: 3rem;
+  }
+
+  .title .barra {
+    height: 0.15rem;
+    transform: translateY(-1.5rem);
+
+  }
+
+  
+}
 
 
 
@@ -525,7 +534,7 @@
   height: 10rem;
   border-radius: 50%;
   border: 0px solid white;
-  transition: .5s ease;
+  transition: .3s ease-out;
   position:absolute;
   display: flex;
   justify-content: space-between;
@@ -999,16 +1008,21 @@
   
   .aside-icons .pages-inicio .i7 {
     margin-left: 0rem;
+    
   }
   
+  .aside-icons .nav-container .nav {
+    transition: 0s ease;
+  }
+
   .aside-icons.closed {
     border: 0px solid white;  
-    transition: .3s;
+    transition: 0s;
   }
 
   .aside-icons.closed .nav-container {
     border: 0px solid white;
-    transition: .3s;
+    transition: 0s;
   }
   
 }
