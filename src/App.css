@@ -269,9 +269,13 @@
 
 @media (max-width: 700px) {
   .title {
-    left: 45%;
+    left: 20%;
     top: 30%;
-    transform: translate(-45%, -30%);
+    transform: translate(-20%, -30%);
+  }
+
+  .title h1 {
+    font-size: 3rem;
   }
 }
 
@@ -460,6 +464,7 @@
   border: 1px solid white;
   transition: .8s ease;
   animation: asideInicio 1s forwards ease;
+
 }
 
 @keyframes asideInicio {
@@ -701,6 +706,10 @@
 
 /* 5 y 7 */
 
+.aside-icons .i7 {
+  color: var(--blue);
+}
+
 .aside-icons.open .i5{
   transform: translate(15rem, 2.9rem) scale(1.7);
   transition: .1s;
@@ -720,6 +729,11 @@
 .aside-icons.open .i7:hover {
   color: var(--blue);
   transform: translate(10rem,-3rem) scale(1.9);
+}
+
+.aside-icons:hover .dash-routes:hover {
+  color: var(--blue);
+  transition: .2s;
 }
 
 /* Pages inicio 3 iconos principañes*/
@@ -977,4 +991,24 @@
   .aside-icons.closed:hover .pages-inicio .dash-routes {
     transform: translateX(1rem) scale(1.8);
   }
+}
+
+/* Movil version of navigator */
+
+@media (max-width: 700px) {
+  
+  .aside-icons .pages-inicio .i7 {
+    margin-left: 0rem;
+  }
+  
+  .aside-icons.closed {
+    border: 0px solid white;  
+    transition: .3s;
+  }
+
+  .aside-icons.closed .nav-container {
+    border: 0px solid white;
+    transition: .3s;
+  }
+  
 }
