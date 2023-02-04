@@ -172,7 +172,7 @@ const Header = () => {
             </aside>
 
             <div className='logo'>
-                <img src="\src\assets\Images\white-blue-logo_Mesa de trabajo 1-08.png" alt="" />
+                <img src="https://i.postimg.cc/PqykkNnG/white-blue-logo-Mesa-de-trabajo-1-08.png" alt="" />
             </div>
             
             <section className='weather'>
