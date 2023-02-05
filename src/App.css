@@ -167,6 +167,7 @@
   padding: 5rem 2rem;
   box-shadow: var(--primary-color) 0 2px 1px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: .3s;
   overflow: hidden;
   overflow-y: auto;
@@ -224,6 +225,7 @@
   cursor: pointer;
   transform:scale(1.2);
   filter: blur(2px);
+  -webkit-filter: blur(2px);
   opacity: .5;
   
 }
@@ -392,6 +394,7 @@
   z-index: -1;
   opacity: 1;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: .1s;
 }
 
@@ -476,6 +479,8 @@
   width: 15rem;
   box-shadow: 8px 0 15px rgba(0, 0, 0, 0.827);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+
   
 }
 
