@@ -50,6 +50,7 @@
   top: 0;
   width:100%;
   height: 7rem;
+  position: fixed;
   padding: 2rem 7rem ;
   display: flex;
   justify-content: space-between;
@@ -158,7 +159,7 @@
   position: absolute;
   right: 0%;
   height: 100vh;
-  width: 53%;
+  width: 55%;
   z-index: 200;
   overflow: hidden;
   display: flex;
@@ -179,7 +180,7 @@
 
 
 .banner::-webkit-scrollbar {
-  width: 0rem;
+  width: 0.5rem;
   background: var(--terciary-color);
 }
 
@@ -261,29 +262,31 @@
 
 .title {
   position: fixed;
-  width: 20rem;
-  height: 5rem;
-  top: 45%;
+  height: 8rem;
+  top: 40%;
   left: 20%;
-  transform: translate(-20%, -45%);
+  transform: translate(-20%, -40%);
   color: white;
   display: flex;
   z-index: -997;
   justify-content: space-between;
   flex-direction: column;
+  overflow: hidden;
+  transition: 1s;
 }
 
 .mensaje-bienvenida {
   font-size: 6rem;
-  animation: title .5s forwards ease;
+  margin-top: 2rem;
+  animation: title 1s forwards ease;
 }
 
 @keyframes title {
   from {
-    transform: translateY(5rem);
+    width: 0rem;
     opacity: 0;
   } to {
-    transform: translate(none);
+    width: 30rem;
     opacity: 1;
   }
 }
@@ -311,19 +314,41 @@
 
 @media (max-width: 700px) {
   .title {
-    left: 20%;
-    top: 30%;
-    transform: translate(-20%, -30%);
+    left: 50%;
+    top:20%;
+    transform: translate(-50%, -20%);
+    position: fixed;
+    width: 10rem;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0;
+  animation: titleResponsive 1s forwards ease;
+
   }
 
   .mensaje-bienvenida {
-    font-size: 3rem;
+    font-size: 2rem;
+    transform: translateX(10rem);
+    margin-top: 2.8rem;
   }
 
   .title .barra {
     height: 0.15rem;
-    transform: translateY(-1.5rem);
+  transform: translateY(-2.5rem);
 
+  }
+
+  @keyframes titleResponsive {
+    from {
+      width: 0rem;
+      opacity: 0;
+    } to {
+      width: 10rem;
+      opacity: 1;
+    }
   }
 
   
@@ -958,6 +983,7 @@
 .image-home img {
   height: 100%;
   object-fit: cover;
+  filter: invert(1);
 }
 
 /* widget clima ejemplo */

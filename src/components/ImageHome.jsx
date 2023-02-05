@@ -38,7 +38,7 @@ const ImageHome = () => {
             transform: `translate(${limitedX}%, ${limitedY}%)`,
             transition: "transform 0.1s ease-out",
           }}>
-            {/* <img src="https://static.vecteezy.com/system/resources/thumbnails/008/481/739/small/doodle-building-cartoon-in-outline-style-png.png" alt="" /> */}
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/008/481/739/small/doodle-building-cartoon-in-outline-style-png.png" alt="" />
             
         </div>
     )

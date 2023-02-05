@@ -1,5 +1,5 @@
 import './App.css'
-// import Banner from './components/Banner'
+import Banner from './components/Banner'
 import Bg from './components/Bg'
 import Header from './components/Header'
 import Title from './components/Title'
