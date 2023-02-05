@@ -43,7 +43,7 @@ const Bg = ( )=> {
 
     return (
         <div className='bg'>
-           <video  ref={videoRef} loop muted playsinline autoPlay style={{
+           <video  ref={videoRef} loop muted playsInline style={{
                     transform: `translate(${-limitedX}%, ${limitedY}%)`,
                     transition: "transform 0.1s ease-out",
                     }}>

@@ -55,6 +55,7 @@
   justify-content: space-between;
   align-items: center;
   opacity: 1;
+  overflow-y: none;
   z-index: 999;
   transition: .5s;
   animation: headerAn1 forwards 1s ease-in-out;
@@ -370,6 +371,12 @@
   transition: .3s;
 }
 
+@media (max-width: 700px) {
+  .bg-aside {
+    transition: 0s;
+  }
+}
+
 .bg-aside.closed {
   width: 0;
 }
@@ -400,7 +407,9 @@
 
 @media (max-width: 700px) {
   
-
+  .bg-aside.open {
+    transition: 0s;
+  }
   .wea {
     cursor: none;
     pointer-events: none;
@@ -490,6 +499,14 @@
   transition: .1s ease-out;
 }
 
+@media (max-width: 700px) {
+
+  
+  .aside.open .menu {
+    transition: 0s;
+  }
+}
+
 
 
 .aside-icons {
@@ -506,6 +523,12 @@
   transition: .8s ease;
   animation: asideInicio 1s forwards ease;
 
+}
+
+@media (max-width: 700px) {
+  .aside-icons {
+    transition: .1s;
+  }
 }
 
 @keyframes asideInicio {
@@ -543,6 +566,12 @@
   transition: .3s ease;
 }
 
+@media (max-width: 700px) {
+  .aside-icons .nav-container {
+    transition: 0s;
+  }
+}
+
 /* .aside-icons.open .nav-container {
   background: rgba(3, 61, 63, 0.296);
 } */
@@ -573,6 +602,12 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
+}
+
+@media (max-width: 700px) {
+  .aside-icons .nav-container .nav {
+    transition: 0s;
+  }
 }
 
 .aside-icons .nav-container .nav .dash-routes {
@@ -629,6 +664,18 @@
 
 .aside-icons.open .nav-container .nav:hover {
   box-shadow:  10px 0 60px rgba(0, 0, 0, 0.691);
+}
+
+@media (max-width: 700px) {
+  .aside-icons.open .nav-container .nav {
+    box-shadow:  10px 0 60px black;
+    background: rgba(0, 0, 0, 0.301);
+    transition: .1s ;
+  }
+
+  .aside-icons.open .nav-container .nav:hover {
+    box-shadow:  10px 0 60px black;
+  }
 }
 
 .dash-routes {
