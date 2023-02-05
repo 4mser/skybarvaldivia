@@ -394,7 +394,6 @@
 .bg-aside.open .fig {
   filter: blur(20px);
   border-radius: 50%;
-  background: var(--blue);
   opacity: 1;
   animation: shapesAn1 20s infinite ease-in-out;
 }
@@ -498,10 +497,10 @@
 }
 
 
-.aside-icons.open {
+/* .aside-icons.open {
   backdrop-filter: contrast(110%);
 }
-
+ */
 
 
 /* .aside-icons:hover {
@@ -524,9 +523,9 @@
   transition: .3s ease;
 }
 
-.aside-icons.open .nav-container {
+/* .aside-icons.open .nav-container {
   background: rgba(3, 61, 63, 0.296);
-}
+} */
 
 .aside-icons:hover {
   width: 25rem;
@@ -605,7 +604,6 @@
   height: 35rem;
   border: 1px solid white;
   opacity: 1;
-  box-shadow: 2px 0 30px var(--secundary-color);
 
 }
 
