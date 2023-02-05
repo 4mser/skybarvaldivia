@@ -21,6 +21,7 @@
   transform: translate(-50%, -50%);
   z-index: -999;
   background: black;
+  overflow: hidden;
 }
 
 .bg video{
@@ -33,6 +34,8 @@
 
   .bg {
     width: 100%;
+    overflow: hidden;
+    height: 100vh;
     /* height: 100vh;
     transform: translate(-35rem, -50%);
     background: rgba(0, 0, 0, 0);  activar al arreglar lo del video en gh pages*/
