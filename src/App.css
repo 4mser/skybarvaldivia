@@ -913,9 +913,7 @@
 
 .image-home img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
-  filter: invert(1);
 }
 
 /* widget clima ejemplo */

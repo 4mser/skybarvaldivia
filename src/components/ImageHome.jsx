@@ -26,8 +26,8 @@ const ImageHome = () => {
     let limitedX = 0;
     let limitedY = 0;
     if (window.innerWidth > 700) {
-      x = (position.x - window.innerWidth / 2) /500;
-      y = (position.y - window.innerHeight / 2) / 500;
+      x = (position.x - window.innerWidth / 2) /300;
+      y = (position.y - window.innerHeight / 2) / 300;
   
       limitedX = Math.min(Math.max(x, -25), 25);
       limitedY = Math.min(Math.max(y, -25), 25);
@@ -38,7 +38,8 @@ const ImageHome = () => {
             transform: `translate(${limitedX}%, ${limitedY}%)`,
             transition: "transform 0.1s ease-out",
           }}>
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/008/481/739/small/doodle-building-cartoon-in-outline-style-png.png" alt="" />
+            {/* <img src="https://static.vecteezy.com/system/resources/thumbnails/008/481/739/small/doodle-building-cartoon-in-outline-style-png.png" alt="" /> */}
+            
         </div>
     )
 }
