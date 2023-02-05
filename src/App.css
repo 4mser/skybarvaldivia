@@ -261,7 +261,7 @@
 /* Title tragos */
 
 .title {
-  position: fixed;
+  position: absolute;
   height: 8rem;
   top: 40%;
   left: 20%;
@@ -317,7 +317,6 @@
     left: 50%;
     top:20%;
     transform: translate(-50%, -20%);
-    position: fixed;
     width: 10rem;
     overflow: hidden;
     display: flex;
@@ -550,9 +549,11 @@
 
 }
 
+/* Animación navegador */
+
 @media (max-width: 700px) {
   .aside-icons {
-    transition: .1s;
+    transition: 0s;
   }
 }
 
@@ -563,6 +564,7 @@
     transform: translate(-12rem, -50%);
   }
 }
+
 
 
 /* .aside-icons.open {
@@ -677,6 +679,7 @@
 }
 
 
+/* Arco externo navegador + iconos */
 
 
 .aside-icons.open .nav-container .nav {
@@ -684,18 +687,28 @@
   height: 35rem;
   border: 1px solid white;
   opacity: 1;
+  animation: animacionNavegadorMovil 1s forwards ease;
+}
 
+@keyframes animacionNavegadorMovil {
+  from {
+    transform: rotate(45deg);
+  } to {
+
+  }
 }
 
 .aside-icons.open .nav-container .nav:hover {
   box-shadow:  10px 0 60px rgba(0, 0, 0, 0.691);
 }
 
+/*Animacion navegador  */
+
 @media (max-width: 700px) {
   .aside-icons.open .nav-container .nav {
     box-shadow:  10px 0 60px black;
     background: rgba(0, 0, 0, 0.301);
-    transition: .1s ;
+    transition: 0s ;
   }
 
   .aside-icons.open .nav-container .nav:hover {

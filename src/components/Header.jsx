@@ -5,7 +5,6 @@ import { CgMenuLeft} from 'react-icons/cg'
 import { GrClose } from 'react-icons/gr'
 import {ImSpoonKnife} from 'react-icons/im'
 import { FaHome, FaCocktail, FaRegClock, FaRegChartBar, FaConciergeBell, FaComments, FaBookmark, FaMapMarkedAlt, FaUserFriends } from 'react-icons/fa'
-import Bg from './Bg';
 
 
 

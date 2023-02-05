@@ -13,7 +13,6 @@ function App() {
       <Header></Header>
       <Title></Title>
       <Bg></Bg>
-
       {/* <Banner></Banner> */}
       {/* <ImageHome></ImageHome> */}
     </div>
