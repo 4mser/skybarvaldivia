@@ -40,7 +40,7 @@ const Bg = ( )=> {
                     transform: `translate(${-limitedX}%, ${limitedY}%)`,
                     transition: "transform 0.1s ease-out",
                     }}>
-                <source src="src/assets/images/bg.mp4" href='src/assets/images/bg.mp4' type="video/mp4"/>
+                <source src="./src/assets/images/bg.mp4" href='src/assets/images/bg.mp4' type="video/mp4"/>
            </video>
         </div>
     )
