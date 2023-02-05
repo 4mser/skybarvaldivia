@@ -11,6 +11,7 @@
 
 
 
+
 .bg {
   width: 100%;
   height: 100vh;
@@ -32,9 +33,9 @@
 
   .bg {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh;
     transform: translate(-35rem, -50%);
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);  activar al arreglar lo del video en gh pages*/
   }
 
 }
@@ -271,7 +272,21 @@
 
 .mensaje-bienvenida {
   font-size: 6rem;
+  animation: title .5s forwards ease;
 }
+
+@keyframes title {
+  from {
+    transform: translateY(5rem);
+    opacity: 0;
+  } to {
+    transform: translate(none);
+    opacity: 1;
+  }
+}
+
+
+
 
 
 
