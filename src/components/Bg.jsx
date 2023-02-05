@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
 
+
 const Bg = ( )=> {
+
+    const videoRef = React.useRef(null);
+
+  useEffect(() => {
+    videoRef.current.play();
+  }, []);
 
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -36,7 +43,7 @@ const Bg = ( )=> {
 
     return (
         <div className='bg'>
-           <video loop muted playsinline autoPlay style={{
+           <video  ref={videoRef} loop muted playsinline autoPlay style={{
                     transform: `translate(${-limitedX}%, ${limitedY}%)`,
                     transition: "transform 0.1s ease-out",
                     }}>
