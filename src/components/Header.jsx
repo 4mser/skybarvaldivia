@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
+
+import { useLocation } from 'react-router-dom';
 
 import { MdNightlight } from 'react-icons/md'
 import { CgMenuLeft} from 'react-icons/cg'
 import { GrClose } from 'react-icons/gr'
 import {ImSpoonKnife} from 'react-icons/im'
-import { FaHome, FaCocktail, FaRegClock, FaRegChartBar, FaConciergeBell, FaComments, FaBookmark, FaMapMarkedAlt, FaUserFriends } from 'react-icons/fa'
+import { FaHome, FaCocktail, FaRegClock, FaRegChartBar, FaConciergeBell, FaComments, FaBookmark, FaMusic, FaMapMarkedAlt, FaUserFriends } from 'react-icons/fa'
 
 
 
@@ -51,15 +54,21 @@ const Header = () => {
 
     const [showWidget, setShowWidget] = useState(false);
 
+    const location = useLocation();
+
     return (
-        <header className='header'>
+        <header className={location.pathname === '/skybarvaldivia/drinks/' ? 'header-drinks' : 'header'}>
 
 
             <CgMenuLeft className='menu' onClick={toggleMenu} style={{filter: isMenuOpen ? 'blur(10px)' : 'blur(0)'}}></CgMenuLeft>
           
             <aside>
 
+
+                {/* Esto controla el fondo para poder hacer click en el para cerrar el navegador */}
                 <div className={`bg-aside ${isMenuOpen ? 'open' : 'closed'}`} onClick={isMenuOpen ? toggleMenu : () => {}}>
+
+
                     {/* <div className='fig fig1' style={{
                     transform: `translate(${-limitedX}%, ${-limitedY}%)`,
                     transition: "transform 0.1s ease-out",
@@ -120,7 +129,7 @@ const Header = () => {
 
 
                             <div className='dash-routes imenu' onClick={toggleMenu}>
-                                <GrClose className='menu-close'  ></GrClose>
+                                <GrClose className='menu-close' ></GrClose>
 
                             </div>
 
@@ -132,12 +141,12 @@ const Header = () => {
 
                             
                             <div className='dash-routes i8'>
-                                <FaCocktail className='menu2'></FaCocktail>
+                                <Link to='/skybarvaldivia/drinks/'><FaCocktail className='menu2'></FaCocktail></Link>
                                 <p>Drinks</p>
                             </div>
 
                             <div className='dash-routes i9'>
-                                <FaBookmark className='menu2'></FaBookmark>
+                                <FaMusic className='menu2'></FaMusic>
                                 <p>Saved</p>
                             </div>
 
@@ -155,11 +164,12 @@ const Header = () => {
 
                         <div className={`pages-inicio ${isMenuOpen ? 'open' : 'closed'}`}>
                             <div className='dash-routes i8'>
-                                <FaCocktail className='menu2'></FaCocktail>
+                                <Link to='/skybarvaldivia/drinks/' className='link drinks'><FaCocktail className='menu2'></FaCocktail></Link>
                             </div>
 
                             <div className='dash-routes i7'>
-                                <FaHome  className='menu2'></FaHome >
+                            <Link to='/skybarvaldivia/' className='link home'><FaHome  className='menu2'></FaHome ></Link>
+                                
                             </div>
 
                             <div className='dash-routes i5'>

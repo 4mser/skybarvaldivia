@@ -1,20 +1,29 @@
 import './App.css'
-import Banner from './components/Banner'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Bg from './components/Bg'
-import Header from './components/Header'
-import Title from './components/Title'
-import ImageHome from './components/ImageHome'
+import Home from './Routes/Home'
+import Drinks from './Routes/Drinks'
 
 function App() {
   
 
   return (
     <div className="App">
-      <Header></Header>
+      {/* <Header></Header>
       <Title></Title>
-      <Bg></Bg>
+      <Bg></Bg> */}
       {/* <Banner></Banner> */}
       {/* <ImageHome></ImageHome> */}
+
+      <BrowserRouter>
+        <Bg></Bg>
+        <Routes>
+          <Route path='/skybarvaldivia/' element={ <Home></Home> }></Route>
+          <Route path='/skybarvaldivia/drinks/' element={ <Drinks></Drinks> }></Route>
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   )
 }

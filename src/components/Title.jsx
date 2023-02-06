@@ -38,7 +38,7 @@ const Title = ( ) => {
             transform: `translate(${-limitedX}%, ${-limitedY}%)`,
             transition: "transform 0.1s ease-out",
           }}>
-            <h1 className="mensaje-bienvenida">Welcome</h1>
+            <h1 className="mensaje-bienvenida">welcome</h1>
             <div className="barra"></div>
         </section>
     )
