@@ -102,29 +102,24 @@ const Header = () => {
                         <div className='nav'>
 
                             <div className='dash-routes i1'>
-                                <FaRegClock className='menu2'></FaRegClock>
-                                <p>Reservas</p>
+                                <Link to='/skybarvaldivia/reservas/' className='link2 reservas'><FaRegClock className='menu2'></FaRegClock></Link>
                             </div>
 
                             <div className='dash-routes i2'>
-                                <FaComments className='menu2'></FaComments>
-                                <p>Feedback</p>
+                                <Link to='/skybarvaldivia/comentarios/' className='link2 comentarios'><FaComments className='menu2'></FaComments></Link>
                             </div>
 
                             <div className='dash-routes i3'>
-                                <FaUserFriends className='menu2'></FaUserFriends>
-                                <p>Team</p>
+                                <Link to='/skybarvaldivia/empleados/' className='link2 empleados'><FaUserFriends className='menu2'></FaUserFriends></Link>
                             </div>
 
 
                             <div className='dash-routes i4'>
-                                <FaConciergeBell className='menu2'></FaConciergeBell>
-                                <p>Waiter</p>
+                                <Link to='/skybarvaldivia/meserx/' className='link2 meserx'><FaConciergeBell className='menu2'></FaConciergeBell></Link>
                             </div>
 
                             <div className='dash-routes i5'>
-                                <ImSpoonKnife className='menu2'></ImSpoonKnife>
-                                <p>Food</p>
+                                <Link to='/skybarvaldivia/food/' className='link2 food'><ImSpoonKnife className='menu2'></ImSpoonKnife></Link>
                             </div>
 
 
@@ -135,29 +130,24 @@ const Header = () => {
 
 
                             <div className='dash-routes i7'>
-                                <FaHome  className='menu2'></FaHome >
-                                <p>Home</p>
+                                <Link to='/skybarvaldivia/' className='link2 home'><FaHome className='menu2'></FaHome></Link>
                             </div>
 
                             
                             <div className='dash-routes i8'>
-                                <Link to='/skybarvaldivia/drinks/'><FaCocktail className='menu2'></FaCocktail></Link>
-                                <p>Drinks</p>
+                                <Link to='/skybarvaldivia/drinks/' className='link2 drinks'><FaCocktail className='menu2'></FaCocktail></Link>
                             </div>
 
                             <div className='dash-routes i9'>
-                                <FaMusic className='menu2'></FaMusic>
-                                <p>Saved</p>
+                                <Link to='/skybarvaldivia/musica/' className='link2 musica'><FaMusic className='menu2'></FaMusic></Link>
                             </div>
 
                             <div className='dash-routes i10'>
-                                <FaMapMarkedAlt className='menu2'></FaMapMarkedAlt>
-                                <p>Map</p>
+                                <Link to='/skybarvaldivia/mapa/' className='link2 mapa'><FaMapMarkedAlt className='menu2'></FaMapMarkedAlt></Link>
                             </div>
 
                             <div className='dash-routes i11'>
-                                <FaRegChartBar className='menu2'></FaRegChartBar>
-                                <p>Data</p>
+                                <Link to='/skybarvaldivia/data/' className='link2 data'><FaRegChartBar className='menu2'></FaRegChartBar></Link>
                             </div>
 
                         </div>
@@ -168,12 +158,11 @@ const Header = () => {
                             </div>
 
                             <div className='dash-routes i7'>
-                            <Link to='/skybarvaldivia/' className='link home'><FaHome  className='menu2'></FaHome ></Link>
-                                
+                                <Link to='/skybarvaldivia/' className='link home'><FaHome  className='menu2'></FaHome ></Link>
                             </div>
 
                             <div className='dash-routes i5'>
-                                <ImSpoonKnife className='menu2'></ImSpoonKnife>
+                                <Link to='/skybarvaldivia/food/' className='link food'><ImSpoonKnife  className='menu2'></ImSpoonKnife ></Link>
                             </div>
                         </div>
                     </div>
