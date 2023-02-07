@@ -715,8 +715,9 @@
 }
 
 @media (max-width: 700px) {
-  .aside-icons .nav-container .nav {
+  .aside-icons.closed .nav-container .nav {
     transition: 0s;
+    transform: translateX(-10rem);
   }
 }
 
