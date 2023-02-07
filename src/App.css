@@ -246,6 +246,7 @@
     width: 80vw;
     padding: 2rem 3rem 13rem 3rem;
     top: 6.5rem;  
+    border-left: none;
   }
 }
 
