@@ -48,7 +48,7 @@ const Bg = ( )=> {
     return (
         <div className='bg'>
            <video  ref={videoRef} loop muted playsInline style={{
-                    transform: `translate(${-limitedX}%, ${limitedY}%)`,
+                    transform: `translate(${limitedX}%, ${limitedY}%)`,
                     transition: "transform 0.1s ease-out",
                     }}>
                 <source src="https://s3.amazonaws.com/skybar.database.teset.1/bg.mp4" type="video/mp4"/>

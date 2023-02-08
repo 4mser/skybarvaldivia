@@ -36,8 +36,8 @@ const Title = ( ) => {
     let y = 0;
     let limitedX = 0;
     let limitedY = 0;
-    x = (position.x - window.innerWidth / 2) / 600;
-    y = (position.y - window.innerHeight / 2) / 100;
+    x = (position.x - window.innerWidth / 2) / 200;
+    y = (position.y - window.innerHeight / 2) / 20;
     limitedX = Math.min(Math.max(x, -25), 25);
     limitedY = Math.min(Math.max(y, -25), 25);
 
