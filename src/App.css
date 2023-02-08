@@ -66,12 +66,37 @@
   color: var(--blue);
 }
 
+.header-food {
+  width: 40%;
+  top: 0;
+  height: 7rem;
+  position: fixed;
+  padding: 2rem 7rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  overflow-y: none;
+  z-index: 999;
+  transition: .5s;
+  animation: headerAn2 forwards .5s ease;
+}
+
+.header-food .food {
+  color: var(--blue);
+}
+
 .header .home {
   color: var(--blue);
 }
 
 @media (max-width: 700px) {
   .header-drinks {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .header-food {
     width: 100%;
     padding: 0 2rem;
   }
@@ -365,9 +390,7 @@
     max-width: 73vw;
   }
 
-  .infospan img {
 
-  }
 
   .info h2 {
     opacity: 1;

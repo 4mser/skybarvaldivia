@@ -57,7 +57,11 @@ const Header = () => {
     const location = useLocation();
 
     return (
-        <header className={location.pathname === '/skybarvaldivia/drinks/' ? 'header-drinks' : 'header'}>
+        <header className={
+            location.pathname === '/skybarvaldivia/drinks/' ? 'header-drinks'
+            : location.pathname === '/skybarvaldivia/food/' ? 'header-food'
+            : 'header'
+          }>
 
 
             <CgMenuLeft className='menu' onClick={toggleMenu} style={{filter: isMenuOpen ? 'blur(10px)' : 'blur(0)'}}></CgMenuLeft>
@@ -191,4 +195,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default Header
