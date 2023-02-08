@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 
 
 const Banner = ({ showBanner }) => {
@@ -5,10 +6,12 @@ const Banner = ({ showBanner }) => {
         <section className={`banner-container ${showBanner ? "slide-in" : "slide-out"}`}>
             <section className='banner'>
                 
+                <Link to='/skybarvaldivia/deautor'>
                 <div className="info">
                     <img src="https://s3.amazonaws.com/skybar.database.teset.1/DSC_2039.jpg" alt="" />
                     <h2>Coctelería de Autor</h2>
                 </div>
+                </Link>
 
                 <div className="info">
                     <img src="https://s3.amazonaws.com/skybar.database.teset.1/DSC_2046.jpg" alt="" />

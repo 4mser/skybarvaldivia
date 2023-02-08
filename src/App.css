@@ -172,9 +172,10 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .header {
     padding: 2rem 2rem;
+    -webkit-backdrop-filter: none;
   }
 }
 
@@ -367,11 +368,23 @@
     line-height: 1rem;
   }
 
+  .banner .info:hover {
+    transform: none;
+  }
+
+  .info:hover h2{
+    transform: translateY(7rem);
+  }
+
   
 .info .cpremium {
   transform: translateY(7.5rem);
 }
 
+.info:hover .cpremium {
+  transform: translateY(7.5rem);
+}
+ 
   
 }
 
@@ -994,6 +1007,7 @@
   transform: translateY(-50%);
   gap: 3rem;
 }
+
 
 .aside-icons .pages-inicio .i7 {
   margin-left: 3rem;
