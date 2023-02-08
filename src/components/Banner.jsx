@@ -117,7 +117,7 @@ const Banner = ({ showBanner }) => {
 
                 <div className="info">
                     <img src="https://images.augustman.com/wp-content/uploads/sites/3/2021/11/30134847/18.-A-bottle-of-ice-cold-Edelweiss.jpg?tr=w-1200,h-900" alt="" />
-                    <h2>Cervezas Premium e Internacionales</h2>
+                    <h2 className="cpremium">Cervezas Premium e Internacionales</h2>
                 </div>
 
             </section>
