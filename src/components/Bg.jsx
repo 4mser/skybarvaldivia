@@ -20,8 +20,8 @@ const Bg = ( )=> {
 
   const handleOrientation = (event) => {
     setPosition({
-      x: (event.beta + 90) * 5,
-      y: (event.gamma + 90) * 5,
+      x: (event.gamma + 90) * 5,
+      y: (event.beta + 90) * 5,
     });
   };
 
