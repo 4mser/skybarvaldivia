@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 const Title = ( ) => {
 
+  const sensitivity = window.innerWidth > 700 ? { x: 200, y: 20 } : { x: 10, y: 10 };
+
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (event) => {
@@ -36,8 +38,8 @@ const Title = ( ) => {
     let y = 0;
     let limitedX = 0;
     let limitedY = 0;
-    x = (position.x - window.innerWidth / 2) / 200;
-    y = (position.y - window.innerHeight / 2) / 20;
+    x = (position.x - window.innerWidth / 2) / sensitivity.x;
+    y = (position.y - window.innerHeight / 2) / sensitivity.y;
     limitedX = Math.min(Math.max(x, -25), 25);
     limitedY = Math.min(Math.max(y, -25), 25);
 

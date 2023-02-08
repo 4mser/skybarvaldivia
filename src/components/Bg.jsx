@@ -6,6 +6,9 @@ const Bg = ( )=> {
     videoRef.current.play();
   }, []);
 
+  const sensitivity = window.innerWidth > 700 ? { x: 600, y: 100 } : { x: 100, y: 50 };
+
+
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (event) => {
@@ -40,8 +43,8 @@ const Bg = ( )=> {
     let y = 0;
     let limitedX = 0;
     let limitedY = 0;
-    x = (position.x - window.innerWidth / 2) / 600;
-    y = (position.y - window.innerHeight / 2) / 100;
+    x = (position.x - window.innerWidth / 2) / sensitivity.x;
+    y = (position.y - window.innerHeight / 2) / sensitivity.y;
     limitedX = Math.min(Math.max(x, -25), 25);
     limitedY = Math.min(Math.max(y, -25), 25);
 
