@@ -211,7 +211,6 @@
 
 .banner {
   position: fixed;
-  right: 0%;
   height: 100vh;
   width: 57%;
   z-index: 200;
@@ -244,10 +243,13 @@
 @media (max-width: 700px) {
   .banner {
     width: 80vw;
-    padding: 2rem 2rem 13rem 3rem;
+    padding: 2rem 0rem 13rem 0rem;
     top: 6.5rem;  
     border-left: none;
+    gap: 1rem;
+    backdrop-filter: none;
   }
+
 }
 
 
@@ -283,8 +285,10 @@
 
 }
 
+
+
 .banner .info:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .info img {
@@ -339,6 +343,23 @@
 .info:hover p {
   opacity: 1;
   transform: translateY(-3rem);
+}
+
+@media (max-width: 700px) {
+  .info {
+    width: 9rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+  }
+
+  .info h2 {
+    opacity: 1;
+    font-size: .7rem;
+    transform: translateY(7rem);
+    text-align: center;
+    font-weight: 500;
+  }
 }
 
 /* Title tragos */
@@ -1271,7 +1292,4 @@
     cursor: none;
   }
 
-  
-
- 
 }
