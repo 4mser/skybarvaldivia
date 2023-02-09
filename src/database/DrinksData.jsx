@@ -1050,6 +1050,7 @@ const drinksData = [
 
     {
         title: 'Café y Té',
+        image: 'https://www.health.com/thmb/x3bPPdbUEUCSd1DMjXWryGGRUiI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/coffee-tea-GettyImages-930798200-fdaf946f14a24d9faa4aaad570aae155.jpg',
         items: [
         {
             id: 144,
@@ -1076,6 +1077,7 @@ const drinksData = [
 
     {
         title: 'Bebidas Energéticas',
+        image: 'https://images.unsplash.com/photo-1570526427001-9d80d114054d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwYnVsbHxlbnwwfHwwfHw%3D&w=1000&q=80',
         items: [
         {
             id: 148,
@@ -1097,6 +1099,7 @@ const drinksData = [
 
     {
         title: 'Sidras',
+        image: 'https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/zuTsw2hOgW3jlSUx2y49HUOXIfw=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/UBBBH53ABTWJUIUMS2KUCLZHB4.jpg',
         items: [
         {
             id: 151,
@@ -1108,6 +1111,7 @@ const drinksData = [
 
     {
         title: 'Cervezas sin Alcohol',
+        image: 'https://cerveza-kunstmann.cl/wp-content/uploads/2022/08/Content-1300x1198_SinAlc1.png',
         items: [
         {
             id: 152,
@@ -1124,6 +1128,7 @@ const drinksData = [
 
     {
         title: 'Cervezas de Especialidad',
+        image: 'https://cervezaaustral.cl/wp-content/uploads/2020/01/slide-01.jpg',
         items: [
         {
             id: 154,
@@ -1170,6 +1175,7 @@ const drinksData = [
 
     {
         title: 'Cervezas Premium',
+        image: 'https://www.foodnavigator-asia.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/headlines/business/heineken-s-edelweiss-fusing-specialised-ingredients-with-localised-marketing-strategy/15500219-1-eng-GB/Heineken-s-Edelweiss-fusing-specialised-ingredients-with-localised-marketing-strategy.jpg',
         items: [
         {
             id: 162,

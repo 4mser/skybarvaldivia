@@ -1414,11 +1414,23 @@
 @media (max-width: 700px) {
 
   .menu-drinks {
-    width: 85%;
+    width: 100%;
   }
 
   .menu-drinks ul {
     width: 100%;
     padding: 2rem 1rem;
   }
+
+  .menu-drinks ul li p {
+    width: 80%;
+  }
+
+}
+
+
+/* que no se muestre el menu en la seccion drinks */
+
+.header-drinks .pages-inicio {
+  display: none;
 }
