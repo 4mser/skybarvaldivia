@@ -35,7 +35,7 @@ const Banner = ({ showBanner }) => {
                                     <h3>{drink.nombre}</h3>
                                     <p>{drink.descripcion}</p>
                                 </div>
-                                <h3 className='precio'>${drink.precio}</h3>
+                                <h4 className='precio'>${drink.precio}</h4>
                             </li>
                         ))}
                         

@@ -73,30 +73,7 @@ const Header = () => {
                 <div className={`bg-aside ${isMenuOpen ? 'open' : 'closed'}`} onClick={isMenuOpen ? toggleMenu : () => {}}>
 
 
-                    {/* <div className='fig fig1' style={{
-                    transform: `translate(${-limitedX}%, ${-limitedY}%)`,
-                    transition: "transform 0.1s ease-out",
-                    }}></div>
-                    <div className='fig fig2' style={{
-            transform: `translate(${-limitedX}%, ${limitedY}%)`,
-            transition: "transform 0.1s ease-out",
-                    }}></div>
-                    <div className='fig fig3' style={{
-                    transform: `translate(${-limitedX}%, ${-limitedY}%)`,
-                    transition: "transform 0.1s ease-out",
-                    }}></div>
-                    <div className='fig fig4' style={{
-            transform: `translate(${limitedX}%, ${-limitedY}%)`,
-            transition: "transform 0.1s ease-out",
-                    }}></div>
-                    <div className='fig fig5' style={{
-            transform: `translate(${limitedX}%, ${limitedY}%)`,
-            transition: "transform 0.1s ease-out",
-                    }}></div>
-                    <div className='fig fig6'style={{
-                    transform: `translate(${-limitedX}%, ${-limitedY}%)`,
-                    transition: "transform 0.1s ease-out",
-                    }}></div> */}
+                    
                 </div>
                 
 
