@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Title = ( ) => {
+const DrinksTitle = ( ) => {
 
   const sensitivity = window.innerWidth > 700 ? { x: 200, y: 20 } : { x: 10, y: 10 };
 
@@ -45,14 +45,14 @@ const Title = ( ) => {
 
 
     return (
-        <section className="title" style={{
+        <section className="title-drinks" style={{
             transform: `translate(${-limitedX}%, ${-limitedY}%)`,
             transition: "transform 0.1s ease-out",
           }}>
-            <h1 className="mensaje-bienvenida">Welcome</h1>
+            <h1 className="drinks-title">Drinks</h1>
             <div className="barra"></div>
         </section>
     )
 }
 
-export default Title
+export default DrinksTitle

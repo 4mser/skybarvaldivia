@@ -7,7 +7,7 @@ const BannerFood = ({ showBanner }) => {
             <section className='banner'>
                 
                 <Link to='/skybarvaldivia/deautor'>
-                <div className="info infospan">
+                <div className="info infospan infospan2">
                     <img src="https://www.ehosa.es/wp-content/uploads/2017/10/cocina-de-autor.jpg" alt="" />
                     <h2>Cocina de Autor</h2>
                 </div>

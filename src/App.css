@@ -47,7 +47,7 @@
 /* Header */
 
 .header-drinks {
-  width: 40%;
+  width: 100%;
   top: 0;
   height: 7rem;
   position: fixed;
@@ -67,7 +67,7 @@
 }
 
 .header-food {
-  width: 40%;
+  width: 100%;
   top: 0;
   height: 7rem;
   position: fixed;
@@ -232,23 +232,23 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
   z-index: -1;
 }
 
 .banner {
   position: fixed;
   height: 100vh;
-  width: 57%;
-  z-index: 200;
+  width: 70%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.103);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  padding: 2rem 6rem 11rem 2rem;
+  top: 7rem;
   transition: .3s;
   overflow: hidden;
   overflow-y: auto;
@@ -269,8 +269,8 @@
 @media (max-width: 700px) {
   .banner {
     width: 100%;
-    padding: 2rem 1rem 13rem 0rem;
     top: 6.5rem;  
+    padding: 2rem;
     border-left: none;
     justify-content: flex-end;
     gap: 1rem;
@@ -299,127 +299,135 @@
 
 
 .info {
-  width: 28rem;
-  height: 17rem;
+  width: 100%;
+  height: 8rem;
   object-fit: cover;
   opacity: 1;
   transition: .3s;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  background: black;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  background: rgba(53, 53, 53, 0.174);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.148);
+  border-left: 1px solid rgba(255, 255, 255, 0.148);
+  padding-left: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
 
 }
 
-
-
-.banner .info:hover {
-  transform: scale(1.05);
+.info .showmore {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.info img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.showmore-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.showmore .up {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotateX(180deg) translateY(.3rem);
   transition: .5s;
 }
 
-
-
-.banner .info:hover img {
-  cursor: pointer;
-  transform:scale(1.2);
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  opacity: .5;
-  
+.showmore .down {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: .5s;
+  transform: translateY(.3rem) ;
 }
 
-@media (max-width: 700px) {
-  .banner .info img:hover {
-    cursor: none;
-    transform:scale(1.2);
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    opacity: .5;
-  }
+.info:hover {
+  background: rgba(99, 114, 134, 0.253);
+  transition: 0s;
+}
+
+.info:hover img {
+  transform: scale(1.1);
 }
 
 .info h2 {
-  position: absolute;
-  opacity: 0;
-  transform: translateY(5rem);
-  transition: .5s;
   color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
-.info:hover h2 {
-  opacity: 1;
-  transform: translateY(-5rem);
-}
-
-.info p {
-  position: absolute;
-  opacity: 0;
-  transform: translateY(5rem);
-  transition: .5s;
-  color: white;
-}
-
-.info:hover p {
-  opacity: 1;
-  transform: translateY(-3rem);
+.info img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  transition: .2s ease-out;
 }
 
 
 @media (max-width: 700px) {
-
-  
-  
-
   .info {
-    max-width: 35vw;
-    height: 12rem;
-    margin-bottom: 2.5rem;
-    border-radius: 10px;
+    width: 100%;
+    height: 4rem;
+    border-radius: 15px;
+    padding: 0 0 0 1rem;
   }
-
-  .infospan {
-    max-width: 73vw;
-  }
-
-
 
   .info h2 {
-    opacity: 1;
+    font-size: 1rem;
+  }
+
+  .showmore-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .info img {
+    width: 40%;
+    height: 100%;
+  }
+
+  .info h2 {
     font-size: .7rem;
-    transform: translateY(7rem);
-    text-align: center;
-    font-weight: 500;
+  }
+
+  .showmore .up {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .showmore .down {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .menu-drinks ul li h3 {
+    font-size: 1rem;
+  }
+
+  .menu-drinks ul li h4 {
+    font-size: .8rem;
+  }
+
+  .menu-drinks ul li p {
+    font-size: .6rem;
     line-height: 1rem;
+    font-style: italic;
   }
 
-  .banner .info:hover {
-    transform: none;
-  }
 
-  .info:hover h2{
-    transform: translateY(7rem);
-  }
-
-  
-.info .cpremium {
-  transform: translateY(7.5rem);
 }
 
-.info:hover .cpremium {
-  transform: translateY(7.5rem);
-}
- 
-  
-}
+
+
 
 
 /* Title tragos */
@@ -445,6 +453,28 @@
   animation: title 1s forwards ease;
 }
 
+.title-drinks {
+  position: absolute;
+  height: 8rem;
+  top: 40%;
+  left: 10%;
+  transform: translate(-10%, -40%);
+  color: white;
+  display: flex;
+  z-index: -997;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.drinks-title {
+  font-size: 6rem;
+  margin-top: 2rem;
+  animation: title 1s forwards ease;
+}
+
+
 @keyframes title {
   from {
     width: 0rem;
@@ -456,11 +486,7 @@
 }
 
 
-
-
-
-
-.title .barra {
+.barra {
   height: 0.2rem;
   left: 0;
   background: var(--blue);
@@ -490,6 +516,10 @@
     padding: 0;
   animation: titleResponsive 1s forwards ease;
 
+  }
+
+  .title-drinks {
+    opacity: 0;
   }
 
   .mensaje-bienvenida {
@@ -1353,4 +1383,36 @@
     cursor: none;
   }
 
+}
+
+/* Banner Drinks */
+
+.menu-drinks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-drinks ul {
+  width: 100%;
+  padding: 2rem;
+}
+
+.menu-drinks ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+
+  .menu-drinks {
+    width: 85%;
+  }
+
+  .menu-drinks ul {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
 }
