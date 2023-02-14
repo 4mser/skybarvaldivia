@@ -101,6 +101,7 @@ import { FaSortUp } from 'react-icons/fa';
 import drinksData from '../database/DrinksData.jsx';
 
 const Banner = ({ showBanner }) => {
+    
   const [showCocteleriaAutor, setShowCocteleriaAutor] = useState(Array(drinksData.length).fill(false));
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
