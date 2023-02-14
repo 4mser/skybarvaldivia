@@ -1438,3 +1438,55 @@
     display: none;
   }
 }
+
+/* Drinks con formulario versión movil*/
+
+.banner-container2 {
+  width: 100%;
+  height: 100vh;
+  margin-top: 11rem;
+  padding: 0rem 2rem 15rem 2rem;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+
+
+.banner-container2 .form select {
+  width: 84%;
+  position: fixed;
+  height: 3rem;
+  top: 7rem;
+  border-radius: 10px;
+  padding: 0 1rem;
+  background: rgba(0, 0, 0, 0.176);
+  backdrop-filter: blur(10px);
+}
+
+.banner-container2 .form select option {
+  background: rgba(0, 0, 0, 0.886);
+}
+
+
+.selected-category-data ul {
+  list-style: none;
+}
+
+.selected-category-data ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.selected-category-data ul li div {
+  width: 70%;
+}
+
+.selected-category-data ul li h3 {
+  font-size: 1rem;
+}
+
+.selected-category-data ul li p {
+  font-size: .8rem;
+  font-style: italic;
+}
